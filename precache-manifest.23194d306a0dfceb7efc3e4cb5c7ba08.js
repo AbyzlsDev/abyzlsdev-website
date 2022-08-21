@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "49911c7461802bc6f9f9",
-    "url": "/abyzlsdev-website/static/css/main.e8ce636a.chunk.css"
+    "revision": "236099a310b4d9ac73df",
+    "url": "/abyzlsdev-website/static/css/main.ad240ec0.chunk.css"
   },
   {
-    "revision": "49911c7461802bc6f9f9",
-    "url": "/abyzlsdev-website/static/js/main.49911c74.chunk.js"
+    "revision": "236099a310b4d9ac73df",
+    "url": "/abyzlsdev-website/static/js/main.236099a3.chunk.js"
   },
   {
     "revision": "c972895fac6c9db70f84",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/abyzlsdev-website/static/js/runtime~main.99ef68a0.js"
   },
   {
-    "revision": "4a2c8f9b47e1ecec3227515169d1ab28",
+    "revision": "843a0eb19cd9c6519197beaf1a263612",
     "url": "/abyzlsdev-website/index.html"
   }
 ];
