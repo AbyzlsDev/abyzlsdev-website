@@ -7,10 +7,9 @@ function NavBar() {
        
         
         <ul class="topnav">
-            <li><Link to="/">Home</Link></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
+            <li><Link to="/abyzlsdev-website">Home</Link></li>
+            <li><Link to="./contact">Contact</Link></li>
+            
         </ul>
     
     
@@ -19,3 +18,6 @@ function NavBar() {
   }
   
   export default NavBar;
+
+  //<li><a href="contact.asp">News</a></li>
+  //<li><a href="about.asp">About</a></li>
