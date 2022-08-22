@@ -19,7 +19,14 @@ test('Contact render', () => {
   render(<Contact/>);
   const linkElement = screen.getByText(/You can find me here!/i);
   expect(linkElement).toBeInTheDocument();
+
+
+
+
+
 });
+
+
 
 test('Full Navigation test', () => {
 

@@ -21,16 +21,16 @@ function Contact() {
 
             <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="150" id="aboutText" style={{display: 'flex', position: 'relative', top: 100, justifyContent: 'center', }}>
                 <a data-tip="@abyzlsneverdies" href="https://twitter.com/abyzlsneverdies">
-                    <img class="icons" src="https://media.discordapp.net/attachments/1010834278839484426/1010834305892761660/png.monster-7.png" />
+                    <img role="twitter" class="icons" src="https://media.discordapp.net/attachments/1010834278839484426/1010834305892761660/png.monster-7.png" />
                 </a>
                 <a data-tip="@abyzlsfr" href="https://www.instagram.com/abyzlsfr/">
-                    <img class="icons" src="https://media.discordapp.net/attachments/1010834278839484426/1010835058199908403/instagramlogologowebsiteicon-1320190502826859478.png" />
+                    <img role="instagram"  class="icons" src="https://media.discordapp.net/attachments/1010834278839484426/1010835058199908403/instagramlogologowebsiteicon-1320190502826859478.png" />
                 </a>
                 <a data-tip="twitch.tv/abyzlsfr" href="https://www.twitch.tv/abyzlsfr">
-                    <img class="icons" src="https://cdn.icon-icons.com/icons2/2992/PNG/512/twitch_logo_icon_187308.png" />
+                    <img role="twitch"  class="icons" src="https://cdn.icon-icons.com/icons2/2992/PNG/512/twitch_logo_icon_187308.png" />
                 </a>
                 <a data-tip="@AbyzlsDev" href="https://github.com/AbyzlsDev">
-                    <img class="icons" src="https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360" />
+                    <img role="github" class="icons" src="https://media.discordapp.net/attachments/1010834278839484426/1011368310799085679/25231.png" />
                 </a>
                 
                
