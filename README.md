@@ -1,3 +1,5 @@
+[![MasterDeployCI](https://github.com/AbyzlsDev/abyzlsdev-website/actions/workflows/master_deploy.yml/badge.svg?branch=main)](https://github.com/AbyzlsDev/abyzlsdev-website/actions/workflows/master_deploy.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
