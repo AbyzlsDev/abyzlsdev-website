@@ -54,7 +54,7 @@ function Home() {
     
         <div id="page-gradient-home" class="text">
     
-            <div data-aos="fade-up" data-aos-delay="2050" id="aboutText">
+            <div data-aos="fade-up" data-aos-delay="250" id="aboutText">
                 <p style={{position: 'relative'}}>Hello! <br/>I'm Abyzls! <br/>Welcome to my page! <span>😁</span></p>
                 
             </div>

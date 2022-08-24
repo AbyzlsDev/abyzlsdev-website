@@ -9,6 +9,7 @@ function NavBar() {
         <ul class="topnav">
             <li><Link to="/abyzlsdev-website">Home</Link></li>
             <li><Link to="./contact">Contact</Link></li>
+            <li><Link to="./about">About</Link></li>
             
         </ul>
     
