@@ -6,18 +6,22 @@ import React from 'react'
 
 
 function About() {
+
+    
+   
     return (
         
         <div>
-      
-
+        <div data-aos="fade" data-aos-duration="1500"  id="aboutText"class="background">
+            <p id="abyzlstext">About</p>
+        </div>
     
-        <div id="page-gradient-about" class="text">
+        <div id="page-gradient" data-aos="zoom-in" style={{height: '200vh'}} class="text">
     
         
 
             <div data-aos="fade-up"  id="aboutText">
-                <p style={{position: 'relative', top: 100}}>My name is Denislav, also known as Abyzls<br />
+                <p style={{position: 'relative', top: 200}}>My name is Denislav, also known as Abyzls<br />
                 I'm from Bulgaria<br />
                 I'm 16 years old <br />
 
@@ -66,7 +70,8 @@ function About() {
     
             
     );
-  }
+    } 
+
   
   export default About;
   

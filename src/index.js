@@ -4,16 +4,28 @@ import './index.css';
 import './CSS/index_home.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
+import Profile from './profile';
 
 
 import { BrowserRouter } from 'react-router-dom';
 
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- 
-    <BrowserRouter>
+<BrowserRouter>
+    <Auth0ProviderWithHistory>
+            
     <App />
+    
+    </Auth0ProviderWithHistory>
     </BrowserRouter>
+            
+   
+    
   
 );
 

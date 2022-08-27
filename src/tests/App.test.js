@@ -5,7 +5,9 @@ import React from 'react'
 import App from '../App'
 import About from '../pages/About';
 import { BrowserRouter as Router, MemoryRouter, useLocation, Navigate, useNavigate } from 'react-router-dom';
-
+import Profile from '../profile'
+import Auth0ProviderWithHistory from '../auth/auth0-provider-with-history'
+import {useAuth0} from '@auth0/auth0-react'
 
 
 
@@ -37,10 +39,27 @@ test('About render', () => {
 
 });
 
+const user = {
+  email: '727cookiezibluezenith@727pp.com',
+  email_verified: true,
+  sub: 'google-oauth2|1234567891234',
+};
 
+jest.mock('@auth0/auth0-react');
+
+beforeEach(() => {
+  // Mock the Auth0 hook and make it return a logged in state
+  useAuth0.mockReturnValue({
+    isAuthenticated: true,
+    user,
+    logout: jest.fn(),
+    loginWithRedirect: jest.fn(),
+  });
+});
 
 test('Full Navigation test', () => {
-
+  
+ 
 
   render(<Router><App/></Router>)
  

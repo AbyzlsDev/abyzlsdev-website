@@ -1,4 +1,7 @@
 import React, { useRef, useState } from 'react'
+import { useAuth0} from "@auth0/auth0-react";
+
+
 
     
 
@@ -9,7 +12,7 @@ import React, { useRef, useState } from 'react'
     
     function changeText(){
 
-        var el = document.getElementById("abyzlstext")
+        var el = document.getElementById("abyzlstext1")
 
   
         if(el != null)  {
@@ -31,31 +34,37 @@ import React, { useRef, useState } from 'react'
     
     }
     
-    setInterval(changeText, time);
+   
     
 
     
 
 function Home() {
 
+    setInterval(changeText, time);                                           
+    
+    const { user, isAuthenticated} = useAuth0();
+    
+    if(isAuthenticated){
+
     
    
     return (
-        
+       
         <div>
       
-        <div class="background">
-            <p id="abyzlstext">Abyzls</p>
+        <div data-aos="fade" data-aos-duration="1500"  id="aboutText"class="background">
+            <p id="abyzlstext1">Abyzls</p>
             
             
         </div>
     
        
     
-        <div id="page-gradient-home" class="text">
+        <div data-aos="zoom-in"  id="page-gradient" class="text">
     
             <div data-aos="fade-up" data-aos-delay="250" id="aboutText">
-                <p style={{position: 'relative'}}>Hello! <br/>I'm Abyzls! <br/>Welcome to my page! <span>😁</span></p>
+                <p style={{position: 'relative'}}>Hello, {user.name}! <br/>I'm Abyzls! <br/>Welcome to my page! <span>😁</span></p>
                 
             </div>
     
@@ -82,9 +91,10 @@ function Home() {
        
       
     </div>
-            
+         
     );
-   
+        }
+    
     
 }
   

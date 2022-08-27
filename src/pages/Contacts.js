@@ -5,14 +5,23 @@ import React from 'react'
 
 
 
+
 function Contact() {
+
+ 
+
     return (
         
         <div >
+            <div data-aos="fade" data-aos-duration="1500"  id="aboutText"class="background">
+            <p id="abyzlstext">Contact</p>
+            
+            
+        </div>
       
       <ReactTooltip style={{place: 'bottom'}} />
     
-        <div id="page-gradient" class="text">
+        <div data-aos="zoom-in" id="page-gradient" style={{height: '100vh'}} class="text">
     
             <div data-aos="fade-up"  id="aboutText">
                 <p style={{position: 'relative', top: 100}}>You can find me here! <span>😁</span></p>
@@ -66,7 +75,8 @@ function Contact() {
     
             
     );
-  }
+    } 
+  
   
   export default Contact;
   
