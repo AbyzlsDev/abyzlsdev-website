@@ -31,15 +31,18 @@ jobs:
     - name: Run tests
       run: npm run test
 
+    - name: Secrets
+      env:
+        REACT_APP_AUTH0_DOMAIN: ${{ secrets.REACT_APP_AUTH0_DOMAIN}}
+        REACT_APP_AUTH0_CLIENT_ID: ${{ secrets.REACT_APP_AUTH0_CLIENT_ID}}
+
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
         name: production-files
         path: ./build
-  env:
-  REACT_APP_AUTH0_DOMAIN: ${{ secrets.REACT_APP_AUTH0_DOMAIN}}
-  REACT_APP_AUTH0_CLIENT_ID: ${{ secrets.REACT_APP_AUTH0_CLIENT_ID}}
   
+
   deploy:
     name: Deploy
     needs: build
