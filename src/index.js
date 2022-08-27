@@ -17,7 +17,7 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <BrowserRouter>
-    <Auth0ProviderWithHistory>
+    <Auth0ProviderWithHistory >
             
     <App />
     
