@@ -19,7 +19,7 @@ const Auth0ProviderWithHistory = ({ children }) => {
       
       appState && appState.targetUrl
         ? appState.targetUrl
-        : window.location.href = 'http://localhost:3000'
+        : window.location.href = 'http://abyzlsdev.github.io/abyzlsdev-website'
     );
   };
 
