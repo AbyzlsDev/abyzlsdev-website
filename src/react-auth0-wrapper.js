@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+/*import React, { useState, useEffect, useContext } from "react";
 import createAuth0Client from "@auth0/auth0-spa-js";
 import { useAuth0} from "@auth0/auth0-react";
 
@@ -83,4 +83,4 @@ export const Auth0Provider = ({
       {children}
     </Auth0Context.Provider>
   );
-};
+};*/
