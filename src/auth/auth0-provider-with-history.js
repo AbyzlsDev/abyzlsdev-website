@@ -19,7 +19,7 @@ const Auth0ProviderWithHistory = ({ children }) => {
     
     appState && appState.targetUrl
       ? appState.targetUrl
-      : window.location.href = 'https://website-abyzlsdev.herokuapp.com/abyzlsdev-website'
+      : window.location.href = window.location.origin + '/abyzlsdev-website'
   );
 };
   
@@ -30,8 +30,7 @@ const Auth0ProviderWithHistory = ({ children }) => {
       redirectUri={window.location.origin}
       onRedirectCallback={onRedirectCallback}
       useRefreshTokens = {true}
-      cacheLocation= {process.env.cacheLocation}
-    >
+      cacheLocation='localstorage'>
       {children}
     </Auth0Provider>
   );
